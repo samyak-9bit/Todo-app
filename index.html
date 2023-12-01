@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/261f99dc05.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div>
+        <h1 class="heading">To-Do List <img src="checklist.png" alt="icon" height="80%"/></h1>
+        <div class="buttonIn">
+            <input class="inputText" id="task" placeholder="Add your Task" />
+            <button class="btn" onclick="addTask()">ADD</button>
+        </div>
+        <table id="taskList"></table>
+    </div>
+   
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+   
+    <h3>You can Edit Your task Here</h3>
+    <form >
+      <input type="text" id="edit"/>
+      <input type="button" value="Save my changes" id="editbtn">
+    </form>
+
+  </div>
+
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
